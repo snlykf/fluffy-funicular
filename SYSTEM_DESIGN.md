@@ -8,12 +8,12 @@ so that I can process it for billing.
 
 ```mermaid
 sequenceDiagram
-    User->>+Website: Request info
+    User->>+Website: Request product sheet
     Website->>+PdfService: Get Invoice PDF
     PdfService-->>Website: Invoice PDF
     Website->>+EmailService: Send PDF via mail
     EmailService-->>Website: Mail queued
-    Website-->>User: Result
+    Website-->>User: Product sheet
 ```
 
 ## Problem statement
